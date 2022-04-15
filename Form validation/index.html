@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+  </head>
 
+  <body>
+    <h2>JAVASCRIPT FORM</h2>
+    <form id="myform" name="myform" onsubmit="return validate()">
+      <table align="center">
+        <tr>
+          <td>Student id :</td>
+          <td>
+            <input type="text" name="stu_id" required="" pattern="[0-9]{8}" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Full Name :</td>
+          <td>
+            <input
+              type="text"
+              name="fullname"
+              required=""
+              pattern="^[A-Za-z]{3,}[ ][A-Za-z]{3,}$"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Upload file:</td>
+          <td><input type="file" required="" /></td>
+        </tr>
+
+        <tr>
+          <td>Email:</td>
+          <td>
+            <input
+              type="text"
+              name="email"
+              required=""
+              pattern="^[a-zA-Z0-9_.]+[@][a-zA-Z]+[.][a-zA-Z]+"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td>
+            <input type="text" id="pass" name="pass" required="" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>confirm password:</td>
+          <td>
+            <input type="text" id="cpass" name="cpass" required="" />
+          </td>
+        </tr>
+      </table>
+      <center>
+        <input type="submit" />
+      </center>
+    </form>
+  </body>
+</html>
